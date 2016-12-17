@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{{ url_for('static', filename='code.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+{% if files %}
+  {% for file in files %}
+    {{ file.contents | safe }}
+  {% endfor %}
+{% else %}
+  Stundet has no files
+{% endif %}
+</body>
+</html>

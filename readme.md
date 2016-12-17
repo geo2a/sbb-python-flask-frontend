@@ -1,0 +1,1 @@
+Dummy frontend for [Students Big Brother](https://github.com/geo2a/students-big-brother) using Flask web framework.
